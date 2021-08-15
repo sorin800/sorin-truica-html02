@@ -1,17 +1,46 @@
+$clr-red: red;
+$clr-purple: purple;
+$clr-green: green;
+$clr-magenta: magenta;
+$clr-lightcoral: lightcoral;
+$clr-pink: pink;
+
+.all-visited {
+  a {
+    text-decoration: line-through;
+  }
+}
+
 ul {
   a {
     text-decoration: none;
 
     &:hover {
-      color: red;
+      color: $clr-red;
     }
 
     &:active {
-      color: purple;
+      color: $clr-purple;
     }
 
     &:visited {
-      color: green;
+      color: $clr-green;
+    }
+  }
+}
+
+ol {
+  a {
+    &:hover {
+      color: $clr-magenta;
+    }
+
+    &:active {
+      color: $clr-pink;
+    }
+
+    &:visited {
+      color: $clr-lightcoral;
     }
   }
 }
