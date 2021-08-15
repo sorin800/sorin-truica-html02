@@ -1,3 +1,36 @@
+.circles {
+  width: 75%;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 2px dotted brown;
+  height: 200px;
+  display: flex;
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  border: 3px solid red;
+  background-color: purple;
+  border-radius: 50%;
+}
+
+.circle-red {
+  background-color: red;
+}
+
+.circle-green {
+  background-color: green;
+}
+
+.circle-blue {
+  background-color: blue;
+}
+
+.circle-border-blue {
+  border: 5px solid blue;
+}
+
 .squares {
   width: 80%;
   border: 1px solid black;

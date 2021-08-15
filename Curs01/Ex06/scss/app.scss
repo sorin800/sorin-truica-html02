@@ -9,6 +9,48 @@
   background-color: $color;
 }
 
+@mixin create-circle() {
+  height: 200px;
+  width: 200px;
+  border: 3px solid red;
+  background-color: purple;
+  border-radius: 50%;
+}
+
+@mixin set-background($color: green) {
+  background-color: $color;
+}
+
+@mixin circle-border($thickness, $color) {
+  border: $thickness solid $color;
+}
+
+.circles {
+  width: 75%;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 2px dotted brown;
+  height: 200px;
+  display: flex;
+}
+.circle {
+  @include create-circle();
+}
+
+.circle-red {
+  @include set-background(red);
+}
+.circle-green {
+  @include set-background();
+}
+.circle-blue {
+  @include set-background(blue);
+}
+
+.circle-border-blue {
+  @include circle-border(5px, blue);
+}
+
 .squares {
   width: 80%;
   border: 1px solid black;
