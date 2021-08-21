@@ -1,0 +1,57 @@
+.line {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #000;
+}
+
+.box-1 {
+  border: 1px dotted brown;
+}
+
+.box-2 {
+  background-color: gray;
+  text-align: center;
+  color: #fff;
+}
+
+.box-3 {
+  border: 1px dotted brown;
+}
+
+.box-4 {
+  background-color: gray;
+  text-align: center;
+  color: #fff;
+}
+
+.box-5 {
+  border: 1px dotted brown;
+}
+
+.box-6 {
+  background-color: gray;
+  text-align: center;
+  color: #fff;
+}
+
+.box-7 {
+  border: 1px dotted brown;
+}
+
+.box-8 {
+  background-color: gray;
+  text-align: center;
+  color: #fff;
+}
+
+.box-9 {
+  border: 1px dotted brown;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -9,3 +9,19 @@
   height: 150px;
   border: 1px solid #000;
 }
+
+//Generate box-1, box-2, box-3
+@for $i from 1 through 5 {
+  .box-#{$i} {
+    border-width: #{$i}px;
+    width: 150px + ($i - 1) * 5;
+    height: 145px + $i * 5;
+  }
+}
+
+@for $i from 1 to 6 {
+  .box-0#{$i} {
+    width: 150px + ($i - 1) * 5;
+    height: 145px + $i * 5;
+  }
+}

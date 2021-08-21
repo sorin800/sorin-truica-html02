@@ -9,3 +9,24 @@
   height: 150px;
   border: 1px solid #000;
 }
+
+$borders: dotted, solid, dashed, double, none;
+
+@each $borderStyle in $borders {
+  .b-#{$borderStyle} {
+    border-style: $borderStyle;
+  }
+}
+
+$spacings: (
+  "xs": 4px,
+  "sm": 8px,
+  "md": 16px,
+  "lg": 32px,
+);
+
+@each $size, $spacing in $spacings {
+  .m-#{$size} {
+    margin: $spacing;
+  }
+}

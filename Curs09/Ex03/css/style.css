@@ -48,3 +48,18 @@ body {
   color: #fff;
 }
 /* do not touch this */
+
+.flex-container-01 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/*  code here */
+.flex-container-06 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: flex-end;
+}
