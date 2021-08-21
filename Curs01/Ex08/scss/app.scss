@@ -1,39 +1,71 @@
-.squares{
- width:80%;
- border:1px solid black;
- padding:10px;
- margin:0 auto;
- // bug in pixeltab
- margin:auto;
- display: flex;
- justify-content: space-between;
+.squares {
+  width: 80%;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0 auto;
+  // bug in pixeltab
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-%square{
- width:200px;
- height:200px;
- border:1px solid black;
- background-color: turquoise;
-
- .span{
-  border:red;
- }
+.circles {
+  width: 80%;
+  border: 1px solid black;
+  margin: 0 auto;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
 }
 
-.square-purple{
- @extend %square;
-
- background-color: purple;
+.circle {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-color: brown;
+  border: 1px solid black;
 }
 
-.square-magenta{
- @extend %square;
-
- background-color: magenta;
+.circle-red {
+  @extend .circle;
+  background-color: red;
 }
 
-.square-peru{
- @extend %square;
+.circle-green {
+  @extend .circle;
+  background-color: green;
+}
 
- background-color: peru;
+.circle-blue {
+  @extend .circle;
+  background-color: blue;
+}
+
+%square {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: turquoise;
+
+  .span {
+    border: red;
+  }
+}
+
+.square-purple {
+  @extend %square;
+
+  background-color: purple;
+}
+
+.square-magenta {
+  @extend %square;
+
+  background-color: magenta;
+}
+
+.square-peru {
+  @extend %square;
+
+  background-color: peru;
 }

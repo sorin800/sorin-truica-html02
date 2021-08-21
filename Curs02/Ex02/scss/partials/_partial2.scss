@@ -1,6 +1,12 @@
-.brand-inverted{
- $brand-main:blue;
+.brand-inverted {
+  $brand-main: blue;
 
- background-color: $brand-neutral;
- color:$brand-main;
+  background-color: $brand-neutral;
+  color: $brand-main;
+}
+
+.brand-special {
+  $brand-main: pink;
+  background-color: $brand-main;
+  color: $brand-neutral;
 }

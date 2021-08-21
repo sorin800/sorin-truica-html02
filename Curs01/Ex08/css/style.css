@@ -8,6 +8,35 @@
   justify-content: space-between;
 }
 
+.circles {
+  width: 80%;
+  border: 1px solid black;
+  margin: 0 auto;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.circle, .circle-blue, .circle-green, .circle-red {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-color: brown;
+  border: 1px solid black;
+}
+
+.circle-red {
+  background-color: red;
+}
+
+.circle-green {
+  background-color: green;
+}
+
+.circle-blue {
+  background-color: blue;
+}
+
 .square-peru, .square-magenta, .square-purple {
   width: 200px;
   height: 200px;
