@@ -16,4 +16,10 @@ $buttons: (
   .btn-#{$name} {
     color: $color;
   }
+  .btn-bg-#{$name} {
+    background-color: $color;
+  }
+  .text-#{$name} {
+    color: $color;
+  }
 }

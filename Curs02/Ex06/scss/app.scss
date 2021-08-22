@@ -30,3 +30,16 @@ $spacings: (
     margin: $spacing;
   }
 }
+
+$paddings: (
+  "xs": 4px,
+  "sm": 8px,
+  "md": 16px,
+  "lg": 32px,
+);
+
+@each $size, $padding in $paddings {
+  .p-#{$size} {
+    padding: $padding;
+  }
+}
