@@ -48,3 +48,75 @@ body {
   color: #fff;
 }
 /* do not touch this */
+
+.flex-container-01 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.flex-container-01 > :last-child {
+  flex-grow: 1;
+}
+
+.flex-container-01 > div:nth-of-type(3) {
+  flex-grow: 2;
+}
+
+.flex-container-02 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.flex-container-02 > .flex-item-01 {
+  flex-grow: 1;
+}
+
+.flex-container-03 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+
+.flex-container-03 > .flex-item-01 {
+  flex-grow: 2;
+}
+
+.flex-container-03 > .flex-item-03 {
+  flex-grow: 1;
+}
+
+.flex-container-04 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.flex-container-04 > .flex-item-01 {
+  flex-grow: 1;
+}
+
+.flex-container-05 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.flex-container-05 > .flex-item:nth-of-type(3) {
+  flex-grow: 2;
+}
+
+.flex-container-05 > div:nth-of-type(4) {
+  flex-grow: 1;
+}
+
+.flex-container-06 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flex-container-06 > .flex-item-04 {
+  flex-grow: 1;
+}

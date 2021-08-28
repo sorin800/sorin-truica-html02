@@ -1,113 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox flex-shrink</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-  <meta
-    http-equiv="X-UA-Compatible"
-    content="ie=edge"
-  >
-  <title>Flexbox flex-shrink</title>
+    <script>
+      let expanded = true;
+      window.addEventListener("DOMContentLoaded", () => {
+        let button = document.getElementById("shrinker");
+        let flexContainers = document.getElementsByClassName("flex-container");
 
-  <script>
-    let expanded = true;
-    window.addEventListener('DOMContentLoaded', () => {
-      let button = document.getElementById('shrinker');
-      let flexContainers = document.getElementsByClassName('flex-container');
+        button.addEventListener("click", () => {
+          let width = expanded ? "350px" : "85%";
+          let text = expanded ? "Grow" : "Shrink";
 
-      button.addEventListener('click', () => {
-        let width = expanded ? '350px' : '85%';
-        let text = expanded ? 'Grow' : 'Shrink';
+          Array.from(flexContainers).forEach((flexContainer) => {
+            flexContainer.style.width = width;
+          });
 
-        Array.from(flexContainers).forEach((flexContainer) => {
-          flexContainer.style.width = width;
+          button.innerText = text;
+
+          expanded = !expanded;
         });
-
-        button.innerText = text;
-
-        expanded = !expanded;
       });
-    });
-  </script>
+    </script>
 
-  <link
-    rel="stylesheet"
-    href="css/style.css"
-  >
+    <link rel="stylesheet" href="css/style.css" />
 
-  <link
-    rel="stylesheet"
-    href="https://pixellab.ro/js/pixeltab/static/js/pixeltab.css"
-  >
-</head>
+    <link
+      rel="stylesheet"
+      href="https://pixellab.ro/js/pixeltab/static/js/pixeltab.css"
+    />
+  </head>
 
-<body>
+  <body>
+    <button id="shrinker">Shrink</button>
 
-  <button id="shrinker">Shrink</button>
+    <div class="flex-container flex-container-01">
+      <div class="underlay">1</div>
 
-  <div class="flex-container flex-container-01">
-    <div class="underlay">1</div>
+      <div class="flex-item flex-item-01">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+    </div>
 
-    <div class="flex-item">1</div>
-    <div class="flex-item">2</div>
-    <div class="flex-item">3</div>
-    <div class="flex-item">4</div>
-  </div>
+    <div class="flex-container flex-container-02">
+      <div class="underlay">2</div>
 
-  <div class="flex-container flex-container-02">
-    <div class="underlay">2</div>
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+    </div>
 
-    <div class="flex-item">1</div>
-    <div class="flex-item">2</div>
-    <div class="flex-item">3</div>
-    <div class="flex-item">4</div>
-  </div>
+    <div class="flex-container flex-container-03">
+      <div class="underlay">3</div>
 
-  <div class="flex-container flex-container-03">
-    <div class="underlay">3</div>
+      <div class="flex-item">1</div>
+      <div class="flex-item flex-item-02">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item flex-item-04">4</div>
+    </div>
 
-    <div class="flex-item">1</div>
-    <div class="flex-item">2</div>
-    <div class="flex-item">3</div>
-    <div class="flex-item">4</div>
-  </div>
+    <div class="flex-container flex-container-04">
+      <div class="underlay">4</div>
 
-  <div class="flex-container flex-container-04">
-    <div class="underlay">4</div>
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+    </div>
 
-    <div class="flex-item">1</div>
-    <div class="flex-item">2</div>
-    <div class="flex-item">3</div>
-    <div class="flex-item">4</div>
-  </div>
+    <div class="flex-container flex-container-05">
+      <div class="underlay">5</div>
 
-  <div class="flex-container flex-container-05">
-    <div class="underlay">5</div>
+      <div class="flex-item flex-item-01">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+    </div>
 
-    <div class="flex-item">1</div>
-    <div class="flex-item">2</div>
-    <div class="flex-item">3</div>
-    <div class="flex-item">4</div>
-  </div>
+    <div class="flex-container flex-container-06">
+      <div class="underlay">6</div>
 
-  <div class="flex-container flex-container-06">
-    <div class="underlay">6</div>
+      <div class="flex-item">1</div>
+      <div class="flex-item flex-item-02">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item flex-item-04">4</div>
+    </div>
 
-    <div class="flex-item">1</div>
-    <div class="flex-item">2</div>
-    <div class="flex-item">3</div>
-    <div class="flex-item">4</div>
-  </div>
-
-  <div
-    class="pixeltab-host"
-    id="html02-09-08"
-  ></div>
-  <script src="https://pixellab.ro/js/pixeltab/static/js/pixeltab.js"></script>
-</body>
-
+    <div class="pixeltab-host" id="html02-09-08"></div>
+    <script src="https://pixellab.ro/js/pixeltab/static/js/pixeltab.js"></script>
+  </body>
 </html>
