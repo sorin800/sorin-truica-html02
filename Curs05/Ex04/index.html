@@ -1,64 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap Grid</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-  <meta
-    http-equiv="X-UA-Compatible"
-    content="ie=edge"
-  >
-  <title>Bootstrap Grid</title>
-</head>
-
-<body>
-
-  <div class="container">
-    <div class="row">
-      <div class="col">16</div>
-      <div class="col">1</div>
-      <div class="col">3</div>
-      <div class="col">23</div>
-      <div class="col">41</div>
-      <div class="col">40</div>
-      <div class="col">8</div>
-      <div class="col">11</div>
-      <div class="col">2</div>
-      <div class="col">321</div>
-      <div class="col">88</div>
-      <div class="col">6</div>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col order-4">16</div>
+        <div class="col">1</div>
+        <div class="col">3</div>
+        <div class="col">23</div>
+        <div class="col">41</div>
+        <div class="col order-5">40</div>
+        <div class="col order-3">8</div>
+        <div class="col">11</div>
+        <div class="col order-1">2</div>
+        <div class="col">321</div>
+        <div class="col order-6">88</div>
+        <div class="col order-2">6</div>
+      </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col">Third</div>
-      <div class="col">Fourth</div>
-      <div class="col">First</div>
-      <div class="col">Second</div>
-      <div class="col">Sixth</div>
-      <div class="col">Fifth</div>
+    <div class="container">
+      <div class="row">
+        <div class="col order-3">Third</div>
+        <div class="col order-4">Fourth</div>
+        <div class="col order-1">First</div>
+        <div class="col order-2">Second</div>
+        <div class="col order-last">Sixth</div>
+        <div class="col order-5">Fifth</div>
+      </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col">87</div>
-      <div class="col">102</div>
-      <div class="col">3</div>
-      <div class="col">45</div>
-      <div class="col">92</div>
+    <div class="container">
+      <div class="row">
+        <div class="col order-last">87</div>
+        <div class="col order-3">102</div>
+        <div class="col order-2">3</div>
+        <div class="col order-1">45</div>
+        <div class="col order-first">92</div>
+      </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="col afk"></div>
-    <div class="col ott"></div>
-    <div class="col tbp"></div>
-  </div>
-</body>
-
+    <div class="container">
+      <div class="col afk order-last"></div>
+      <div class="col ott order-first"></div>
+      <div class="col tbp"></div>
+    </div>
+  </body>
 </html>
