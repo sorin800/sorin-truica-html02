@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bootstrap Grid</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap Grid</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .demo-row {
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container text-light">
+      <section class="row demo-row bg-dark mb-5 align-items-start">
+        <article class="col border border-light py-2">Article</article>
+        <article class="col border border-light py-2">Article</article>
+        <article class="col border border-light py-2">Article</article>
+      </section>
+      <section class="row demo-row bg-secondary mb-5 align-items-center">
+        <article class="col border border-light py-2">Article</article>
+        <article class="col border border-light py-2">Article</article>
+        <article class="col border border-light py-2">Article</article>
+      </section>
+      <section class="row demo-row bg-dark align-items-end">
+        <article class="col border border-light py-2">Article</article>
+        <article class="col border border-light py-2">Article</article>
+        <article class="col border border-light py-2">Article</article>
+      </section>
+    </div>
+  </body>
 </html>

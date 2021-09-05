@@ -1,31 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-  <meta
-    http-equiv="X-UA-Compatible"
-    content="ie=edge"
-  >
-  <title>Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://pixellab.ro/js/pixeltab/static/js/pixeltab.css"
+    />
 
-  <link
-    rel="stylesheet"
-    href="https://pixellab.ro/js/pixeltab/static/js/pixeltab.css"
-  >
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <header class="container">
+      <h1>Formular reteta</h1>
+    </header>
+    <main class="container pb-5 mb-5">
+      <form action="">
+        <fieldset class="row mb-2">
+          <legend>Reteta</legend>
+          <section class="col-12 col-lg-6 mb-2 mb-lg-0">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="recipe-name"
+                  >Numele retetei *</label
+                >
+              </div>
+              <input
+                name="recipe-name"
+                id="recipe-name"
+                type="text"
+                class="form-control"
+                placeholder="Numele retetei *"
+                required
+              />
+            </div>
 
-  <div
-    class="pixeltab-host"
-    id="html02-05-13"
-  ></div>
-  <script src="https://pixellab.ro/js/pixeltab/static/js/pixeltab.js"></script>
-</body>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <label class="input-group-text h-100" for="long-description"
+                  >Descriere lunga *</label
+                >
+              </div>
+              <textarea
+                name="long-description"
+                id="long-description"
+                cols="30"
+                rows="8"
+                class="form-control"
+                required
+                placeholder="Descriere lunga *"
+              ></textarea>
+            </div>
 
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <label class="input-group-text h-100" for="short-description"
+                  >Descriere scurta *</label
+                >
+              </div>
+              <textarea
+                name="short-description"
+                id="short-description"
+                cols="30"
+                rows="8"
+                class="form-control"
+                required
+                placeholder="Descriere scurta *"
+              ></textarea>
+            </div>
+          </section>
+          <section class="col-12 col-lg-6">
+            <div class="mb-2">
+              <label for="main-image" class="form-label">
+                Imaginea principala *
+              </label>
+              <input
+                type="file"
+                name="main-image"
+                id="main-image"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <label for="recipe-author" class="input-group-text"
+                  >Autor *</label
+                >
+              </div>
+              <select
+                name="recipe-author"
+                id="recipe-author"
+                class="flex-grow-1 rounded-end"
+              >
+                <option value="">-autor-</option>
+              </select>
+            </div>
+          </section>
+        </fieldset>
+
+        <fieldset class="row mb-2">
+          <legend>Autor (optional)</legend>
+          <section class="col-12 mb-2">
+            <div class="form-check form-switch">
+              <input
+                type="checkbox"
+                name="has-author"
+                id="has-author"
+                class="form-check-input"
+              />
+
+              <label for="has-author" class="form-check-label">
+                Adauga autor
+              </label>
+            </div>
+          </section>
+
+          <section class="col-12 col-lg-6 mb-2 mb-lg-0">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <label for="author-name" class="input-group-text">
+                  Numele autorului *
+                </label>
+              </div>
+              <input
+                type="text"
+                name="authorn-name"
+                id="author-name"
+                class="form-control"
+                placeholder="Numele autorului *"
+                required
+              />
+            </div>
+
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <label for="author-surname" class="input-group-text">
+                  Prenumele autorului *
+                </label>
+              </div>
+              <input
+                type="text"
+                name="author-surname"
+                id="author-surname"
+                class="form-control"
+                placeholder="Prenumele autorului *"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <label for="author-email" class="input-group-text">
+                  Email *
+                </label>
+              </div>
+              <input
+                type="email"
+                name="author-email"
+                id="author-email"
+                class="form-control"
+                placeholder="Email *"
+                required
+              />
+            </div>
+          </section>
+
+          <section class="col-12 col-lg-6 mb-2 mb-lg-0">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <label for="author-website" class="input-group-text">
+                  Website autorului
+                </label>
+              </div>
+              <input
+                type="text"
+                name="author-website"
+                id="author-website"
+                class="form-control"
+                placeholder="Website"
+              />
+            </div>
+          </section>
+        </fieldset>
+
+        <fieldset class="row mb-2">
+          <legend>Ingrediente</legend>
+          <section class="col-12 col-lg-6 mb-2 mb-lg-0">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <label for="ingredient-name" class="input-group-text">
+                  Nume ingredient *
+                </label>
+              </div>
+              <input
+                type="text"
+                name="ingredient-name"
+                id="ingredient-name"
+                class="form-control"
+                placeholder="Nume ingredient"
+                required
+              />
+              <button class="btn btn-primary" type="button" title="Adauga">
+                Adauga
+              </button>
+            </div>
+          </section>
+          <section class="col-12 col-lg-6">
+            <h1 class="h3">Lista de ingrediente</h1>
+            <ul>
+              <li class="mb-1">
+                10 g de ulei
+                <button type="button" class="btn btn-primary" title="Editeaza">
+                  Editeaza
+                </button>
+
+                <button class="btn btn-danger" title="Sterge" type="button">
+                  Sterge
+                </button>
+              </li>
+              <li class="mb-1">
+                200g de ceapa
+                <button type="button" class="btn btn-primary" title="Editeaza">
+                  Editeaza
+                </button>
+
+                <button class="btn btn-danger" title="Sterge" type="button">
+                  Sterge
+                </button>
+              </li>
+              <li>
+                200g de ardei gras
+                <button type="button" class="btn btn-primary" title="Editeaza">
+                  Editeaza
+                </button>
+
+                <button class="btn btn-danger" title="Sterge" type="button">
+                  Sterge
+                </button>
+              </li>
+            </ul>
+          </section>
+        </fieldset>
+
+        <fieldset class="row mb-2">
+          <legend>Pasi</legend>
+          <section class="col-12 col-lg-6 mb-2 mb-lg-0">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <label for="step-title" class="input-group-text" required
+                  >Titlu pas *</label
+                >
+              </div>
+              <input
+                type="text"
+                name="step-title"
+                id="step-title"
+                class="form-control"
+                placeholder="Titlu pas *"
+                required
+              />
+            </div>
+
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <label for="step-subtitle" class="input-group-text" required
+                  >Titlu pas *</label
+                >
+              </div>
+              <input
+                type="text"
+                name="step-subtitle"
+                id="step-subtitle"
+                class="form-control"
+                placeholder="Subtitlu pas *"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <label class="input-group-text h-100" for="step-description"
+                  >Descriere pas *</label
+                >
+              </div>
+              <textarea
+                name="step-description"
+                id="step-description"
+                cols="30"
+                rows="8"
+                class="form-control"
+                required
+                placeholder="Descriere pas *"
+              ></textarea>
+            </div>
+            <div class="text-end">
+              <button
+                type="button"
+                title="Reseteaza"
+                class="btn btn-outline-danger"
+              >
+                Reseteaza
+              </button>
+              <button class="btn btn-primary" type="button" title="Adauga">
+                Adauga
+              </button>
+            </div>
+          </section>
+        </fieldset>
+
+        <fieldset class="text-center">
+          <button
+            class="btn btn-outline-danger"
+            title="Reseteaza tot"
+            type="reset"
+          >
+            Reseteaza tot
+          </button>
+          <button class="btn btn-primary" type="submit" title="Trimite reteta">
+            Trimite reteta
+          </button>
+        </fieldset>
+      </form>
+    </main>
+
+    <div class="pixeltab-host" id="html02-05-13"></div>
+    <script src="https://pixellab.ro/js/pixeltab/static/js/pixeltab.js"></script>
+  </body>
 </html>
