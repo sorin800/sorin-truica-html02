@@ -1,0 +1,121 @@
+@keyframes bar-01 {
+  from {
+    width: 50px;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.bar-01 {
+  animation: bar-01 10s ease-in forwards;
+}
+
+/* add bar-02  */
+@keyframes bar-02 {
+  from {
+    width: 150px;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.bar-02{
+  animation: bar-02 10s linear forwards;
+}
+
+@keyframes bar-03 {
+  0% {
+    width: 100%;
+    background-color: blue;
+  }
+
+  25% {
+    width: 75%;
+    background-color: yellow;
+  }
+
+  50% {
+    width: 200px;
+    background-color: red;
+  }
+
+  75%,
+  100% {
+    width: 5px;
+    background-color: blue;
+  }
+}
+
+.bar-03 {
+  animation: bar-03 12s linear forwards;
+}
+
+/* Pentru al patrulea element, adauga o animatie care va duce
+ peste 5 secunde prin 4 cadre de 25%, primul fiind starea initiala a elementului,
+ al doilea fiind latimea 50% si fundal albastru, al treilea ramanand la 50% si fundal negru,
+ al patrulea fiind latime de 150px si fundal portocaliu. Foloseste ease-out */
+
+@keyframes bar-04{
+  25% {
+  }
+
+  50% {
+    width:50%;
+    background-color: blue;
+  }
+
+  75% {
+    width:50%;
+    background-color: #333;
+  }
+
+  100% {
+    width:150px;
+    background-color: orange;
+  }
+}
+
+.bar-04 {
+  animation: bar-04 6s ease-out forwards;
+}
+
+@keyframes bar-05 {
+  0% {
+    width: 100%;
+    background-color: green;
+  }
+
+  25% {
+    width: 500px;
+    background-color: red;
+  }
+
+  75% {
+    width: 75%;
+    background-color: green;
+  }
+
+  100% {
+    width: 500px;
+    background-color: orange;
+  }
+}
+
+.bar-05 {
+  animation: bar-05 8s linear forwards;
+}
+
+
+@keyframes bar-06 {
+  to{
+    width:100%;
+  }
+}
+
+.bar-06 {
+  animation: bar-06 4s ease-in forwards;
+}

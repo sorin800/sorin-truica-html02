@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* @keyframes loader {
+  from {
+    color: black;
+  }
+  to {
+    color: white;
+  }
+} */
+
+@keyframes loader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.loader {
+  animation: loader 1.5s linear infinite forwards alternate;
+}
